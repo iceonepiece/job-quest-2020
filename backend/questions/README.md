@@ -37,5 +37,13 @@ query1 is faster because it scan the whole collection once but query2 do n(searc
 4. Explain XSS / SQL Injection / Man in the Middle Attack, and how to prevent each attack type.
 
 5. Explain the different between using `callback` / `Promise` / `async await`. When to use and when not to.
+#### Answer
+```
+callback: a function that be passed in the target function to run after the target function is done
+Promise: an object that encapsulate asynchronous tasks and allow to be chain by `then` keyword
+async await: keywords that use to work with Promise for simplicity
+  `async` encapsulate a normal function in Promise
+  `await` is the another way to do `then` for Promise in the clean way
+```
 
 6. Explain how HTTP protocol works.
