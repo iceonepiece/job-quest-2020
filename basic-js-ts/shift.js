@@ -1,4 +1,8 @@
 module.exports = (array, direction, number) => {
+  if (array.length === 0) {
+    return array;
+  }
+
   const moves = number % array.length;
 
   if (moves === 0) {
