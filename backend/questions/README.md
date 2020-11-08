@@ -1,8 +1,21 @@
 ### Back-end Questions
 
 1. Explain First-party cookie & Third-party cookie
+#### Answer
+```
+First-party cookie is the cookie created by the site that we currently visited.
+So Third-party cookie is the cookie created by the other site.
+```
 
 2. Explain CAP Theorem.
+#### Answer
+```
+Three characteristics of the DBMS
+
+Consistency: How well the system maintain all nodes see the same data at the same time
+Availability: How well the system open for read and write (handle a lot of requests)
+Partition tolerance: How well the system continue working properly even if some nodes are not working
+```
 
 3. Considering two queries
 
@@ -15,6 +28,11 @@ const query2 = await Promise.all(searchIds.map(searchId => Product.find({ id: se
 ```
 
 Which one is faster.
+
+#### Answer
+```
+query1 is faster because it scan the whole collection once but query2 do n(searchIds.length) times
+```
 
 4. Explain XSS / SQL Injection / Man in the Middle Attack, and how to prevent each attack type.
 
